@@ -16,10 +16,10 @@ function tabNavallwidth() {
     $tabNav.width(taballwidth + 25);
     var w = $tabNavWp.width();
     if (taballwidth + 25 > w) {
-        $tabNavmore.show()
+        $tabNavmore.show();
     }
     else {
-        $tabNavmore.hide();
+        $tabNavmore.show();
         $tabNav.css({left: 0});
     }
 }
@@ -334,6 +334,6 @@ $(function () {
     });
 
     function toNavPos() {
-        oUl.stop().animate({'left': -num * 100}, 100);
+        oUl.stop().animate({'left': -num * 110}, 400);
     }
 }); 

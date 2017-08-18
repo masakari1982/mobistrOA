@@ -51,11 +51,11 @@
                 <li class="active"><span title="我的桌面" data-href="welcome.html">我的桌面</span></li>
             </ul>
             <div class="Hui-tabNav-more btn-group">
-                <a id="js-tabNav-prev" class="btn radius btn-default size-S" href="javascript:;">
-                    <i class="Hui-iconfont">&#xe6d4;</i>
+                <a id="js-tabNav-prev" class="btn btn-default" href="javascript:;">
+                    <i class="fa fa-angle-left"></i>
                 </a>
-                <a id="js-tabNav-next" class="btn radius btn-default size-S" href="javascript:;">
-                    <i class="Hui-iconfont">&#xe6d7;</i>
+                <a id="js-tabNav-next" class="btn btn-default" href="javascript:;">
+                    <i class="fa fa-angle-right"></i>
                 </a>
             </div>
         </div>
