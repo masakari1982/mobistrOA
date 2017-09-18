@@ -19,7 +19,7 @@ function tabNavallwidth() {
         $tabNavmore.show();
     }
     else {
-        $tabNavmore.show();
+        $tabNavmore.hide();
         $tabNav.css({left: 0});
     }
 }
@@ -96,21 +96,21 @@ function creatIframe(href, titleName) {
     show_nav.append('<li class="active"><span title="' + titleName + '" data-href="' + href + '">' + titleName + '</span><i></i></li>');
     tabNavallwidth();
     if ('function' == typeof $('#min_title_list li').contextMenu) {
-        $("#min_title_list li").contextMenu('Huiadminmenu', {
+        $("#min_title_list li").contextMenu('simuRightButton', {
             bindings: {
-                'closethis': function (t) {
+                'closeThis': function (t) {
                     var $t = $(t);
                     if ($t.find("i")) {
                         $t.find("i").trigger("click");
                     }
                 },
-                'closeall': function (t) {
+                'closeAll': function (t) {
                     $("#min_title_list li i").trigger("click");
                 },
             }
         });
     } else {
-
+        $('div.simuRightButton').hide();
     }
 
     // if (!$tabNav[0]) {

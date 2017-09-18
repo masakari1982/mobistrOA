@@ -10,7 +10,7 @@
 
     <link rel="Bookmark" href="/favicon.ico" >
     <link rel="Shortcut Icon" href="/favicon.ico" />
-    <g:include view="/layouts/styling.gsp" />
+    <g:include view="/layouts/styling.gsp" /><g:include view="/layouts/styling.gsp" />
 
     <title>MobistrOA</title>
     <meta name="keywords" content="">
@@ -69,12 +69,16 @@
             <iframe scrolling="yes" frameborder="0" src="/Home/welcome"></iframe>
         </div>
     </div>
+
+
 </section>
 
-<div class="contextMenu" id="Huiadminmenu">
+<div class="contextMenu" id="simuRightButton">
     <ul>
-        <li id="closethis">关闭当前 </li>
-        <li id="closeall">关闭全部 </li>
+        <li id="reloadThis">刷新</li>
+        <li id="colseThis">关闭</li>
+        <li id="closeOther">关闭其他</li>
+        <li id="closeAll">关闭全部</li>
     </ul>
 </div>
 

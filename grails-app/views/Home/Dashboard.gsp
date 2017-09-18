@@ -1,26 +1,19 @@
-<script type="text/javascript">
-    window.onload =function()
-        {
-            var linkList=window.parent.document.getElementsByTagName("link");//获取父窗口link标签对象列表
-            var head=document.getElementsByTagName("head").item(0);//外联样式
-            for(var i=0;i<linkList.length;i++)
-            {
-                var l=document.createElement("link");
-                l.rel = 'stylesheet'
-                l.type = 'text/css';
-                l.href=linkList[i].href;
-                head.appendChild(l);
-            }
-        }
-</script>
+<g:include view="/layouts/styling.gsp" />
 
-<div class="row">
-    Dashboard
-
-    <a class="btn btn-default">default</a>
+<div class="page-container">
+    <div class="row">
+        <div class="col-md-12">
+            <a class="btn btn-primary w-xs">default</a>
+            <a class="btn btn-default w-xs">default</a>
+            <a class="btn btn-success w-xs">default</a>
+            <a class="btn btn-info w-xs">default</a>
+            <a class="btn btn-warning w-xs">default</a>
+            <a class="btn btn-danger w-xs">default</a>
+            <a class="btn btn-dark w-xs">default</a>
+            <a class="btn btn-default disabled w-xs">default</a>
+        </div>
+    </div>
 </div>
 
 
-<script>
-    var $$ = window.parent.$; //指定调用父页面的Jquery
-</script>
+<g:include view="/layouts/frameScripting.gsp" />
